@@ -61,6 +61,71 @@
         </ul>
       </header>
 
+      <section class="catalog-filter">
+        <h2 class="visually-hidden">Фильтры</h2>
+        <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="filter-group">
+            <legend class="filter-title">Инфраструктура:</legend>
+
+            <ul class="filter-list">
+              <li class="filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="pool" checked>
+              Бассейн
+                </label>
+              </li>
+              <li class="filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="parking" checked>
+              Парковка
+                </label>
+              </li>
+              <li class="filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="wi-fi">
+              Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="catalog-filter">
+            <legend class="filter-title">Тип жилья:</legend>
+            <ul class="filter-list">
+              <li class="filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="shaving-supplies" checked>
+              Гостиница
+                </label>
+              </li>
+              <li class="filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="care-products">
+              Мотель
+                </label>
+              </li>
+              <li class="filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="accessories">
+              Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <div class="catalog-filter">
+            <label for="priсe">Стоимость, ₽:</label>
+            <input type="number" min="0" max="9000" id="priсe" name="priсe" value="0">
+            <input type="number" min="0" max="9000" id="priсe" name="priсe" value="9000">
+            <input type="range" min="0" max="9000" step="1" value="8000">
+          </div>
+          <button class="filter-main-button" type="submit">Применить</button>
+          <button class="filter-sub-button" type="submit">Сбросить</button>
+        </form>
+      </section>
+
+
+
         <section class="subscription">
             <h2 class="subscription-title">Подпишитесь на рассылку</h2>
             <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
