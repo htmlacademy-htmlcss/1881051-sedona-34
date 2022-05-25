@@ -61,7 +61,7 @@
         </ul>
       </header>
 
-      <section class="catalog-filter">
+      <section class="filter-main">
         <h2 class="visually-hidden">Фильтры</h2>
         <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="filter-group">
@@ -89,7 +89,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="catalog-filter">
+          <fieldset class="filter-group">
             <legend class="filter-title">Тип жилья:</legend>
             <ul class="filter-list">
               <li class="filter-item">
@@ -113,7 +113,7 @@
             </ul>
           </fieldset>
 
-          <div class="catalog-filter">
+          <div class="filter-group">
             <label for="priсe">Стоимость, ₽:</label>
             <input type="number" min="0" max="9000" id="priсe" name="priсe" value="0">
             <input type="number" min="0" max="9000" id="priсe" name="priсe" value="9000">
@@ -124,7 +124,7 @@
         </form>
       </section>
 
-      <section class="catalog-products">
+      <section class="products-main">
         <h2 class="products-title">Найдено гостиниц: 38</h2>
 
         <select class="select-control" aria-label="Сортировка">
@@ -136,13 +136,13 @@
           <span class="visually-hidden">Показать карточки</span>
         </a>
         <a class="button" href="#">
-          <span class="visually-hidden">Показать галерея</span>
+          <span class="visually-hidden">Показать галерею</span>
         </a>
-        <a href="#" class="button button-light">
+        <a class="button" href="#">
           <span class="visually-hidden">Показать список</span>
         </a>
 
-        <ul class="product-list">
+        <ul class="products-list">
           <li class="product-card">
             <a class="product-card-link" href="product.html">
               <img class="product-card-image" src="" alt="">
@@ -213,6 +213,36 @@
           </li>
         </ul>
       </section>
+
+      <footer class="footer-main">
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
+        </ul>
+
+        <p>Гостиниц на странице:</p>
+        <select class="select-control" aria-label="Количество гостиниц">
+          <option value="4">4</option>
+          <option value="8">8</option>
+          <option value="16">16</option>
+        </select>
+      </footer>
 
         <section class="subscription">
             <h2 class="subscription-title">Подпишитесь на рассылку</h2>
