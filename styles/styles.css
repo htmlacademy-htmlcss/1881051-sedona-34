@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -44,7 +44,7 @@ body {
 .main-index {
   color: #333333;
   background-color: #ffffff;
-  background-image: url("./images/background-mountains.jpg");
+  background-image: url("../images/background-mountains.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -104,7 +104,7 @@ body {
 
 .subscription {
   background-color: #5A8AAE;
-  background-image: url(".../images/background-mountains-blur.jpg");
+  background-image: url("../images/background-mountains-blur.jpg");
 }
 
 .subscription-title {
