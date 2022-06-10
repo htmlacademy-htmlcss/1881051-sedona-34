@@ -44,7 +44,7 @@ body {
 .main-index {
   color: #333333;
   background-color: #ffffff;
-  background-image: url("images/background-mountains.jpg");
+  background-image: url("./images/background-mountains.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -104,7 +104,7 @@ body {
 
 .subscription {
   background-color: #5A8AAE;
-  background-image: url("images/background-mountains-blur.jpg");
+  background-image: url(".../images/background-mountains-blur.jpg");
 }
 
 .subscription-title {
