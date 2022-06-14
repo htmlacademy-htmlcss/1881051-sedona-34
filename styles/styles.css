@@ -31,12 +31,13 @@ body {
   text-decoration: none;
 }
 
-.botton {
+.button {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   color: #ffffff;
   background-color: #756157;
+  border: none;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -105,6 +106,8 @@ body {
 .subscription {
   background-color: #5A8AAE;
   background-image: url("../images/background-mountains-blur.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .subscription-title {
@@ -124,6 +127,16 @@ body {
   text-align: center;
 }
 
+.subscription-button {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #82B3D3;
+  border: none;
+  text-transform: uppercase;
+}
+
 .footer-phone {
   font-size: 40px;
   line-height: 40px;
@@ -131,4 +144,145 @@ body {
   color: #000000;
   text-align: center;
   text-decoration: none;
+}
+
+.header-main {
+  background-color: #5A8AAE;
+  background-image: url("../images/background-mountains-blur-2.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+}
+.filter-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.control {
+  color: #ffffff;
+}
+
+.filter-main-button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #82B3D3;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.filter-sub-button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #82b2d300;
+  border: none;
+  text-decoration: none;
+}
+
+.products-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.product-card-link {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-card-price {
+font-size: 18px;
+line-height: 21px;
+font-weight: 400;
+color: #333333;
+}
+
+.product-card-main-button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #756157;
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.product-card-sub-button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #82B3D3;
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.product-card-raiting {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  background-color: #F2F2F2;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-decoration: none;
+}
+
+.pagination-link-current {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #fafafa;
+  text-decoration: none;
+}
+
+.subscription-title-catalog {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subscription-text-catalog {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
 }
