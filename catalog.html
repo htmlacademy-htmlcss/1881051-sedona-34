@@ -45,9 +45,9 @@
       </nav>
     </header>
 
-    <main class="main-container main-catalog">
+    <main class="catalog-container main-catalog">
       <header class="header-main">
-        <div class="page-container">
+        <div class="header-catalog-container">
           <h1 class="header-title">Гостиницы Седоны</h1>
 
           <ul class="breadcrumbs">
@@ -73,19 +73,22 @@
                   <li class="filter-item">
                     <label class="control">
                       <input class="control-input" type="checkbox" name="pool" checked>
-                  Бассейн
+                      <span class="control-mark-checkbox"></span>
+                      <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="control">
                       <input class="control-input" type="checkbox" name="parking" checked>
-                  Парковка
+                      <span class="control-mark-checkbox"></span>
+                      <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="control">
                       <input class="control-input" type="checkbox" name="wi-fi">
-                  Wi-Fi
+                      <span class="control-mark-checkbox"></span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -96,19 +99,22 @@
                   <li class="filter-item">
                     <label class="control">
                       <input class="control-input" type="radio" name="product-group" value="shaving-supplies" checked>
-                  Гостиница
+                      <span class="control-mark-radio"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="control">
                       <input class="control-input" type="radio" name="product-group" value="care-products">
-                  Мотель
+                      <span class="control-mark-radio"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="control">
                       <input class="control-input" type="radio" name="product-group" value="accessories">
-                  Апартаменты
+                      <span class="control-mark-radio"></span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -116,10 +122,22 @@
 
               <div class="filter-group">
                 <label for="priсe" class="filter-title">Стоимость, ₽:</label>
-                <input type="number" min="0" max="9000" id="priсe" name="priсe" value="0">
-                <input type="number" min="0" max="9000" id="priсe" name="priсe" value="9000">
-                <input type="range" min="0" max="9000" step="1" value="8000">
+                <input class="range-input" type="number" min="0" max="9000" id="priсe" name="min-priсe" value="0" placeholder="от">
+                <input class="range-input" type="number" min="0" max="9000" id="priсe" name="max-priсe" value="9000" placeholder="до">
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 42px; width: 136px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
+
               <div class="filter-group">
                 <button class="filter-main-button" type="submit">Применить</button>
                 <button class="filter-sub-button" type="reset">Сбросить</button>
@@ -155,18 +173,23 @@
                 <img class="product-card-image" src="images/аmara-resort-&-spa.jpg" width="300" height="211" alt="">
                 <h3 class="product-card-title">Amara Resort & Spa</h3>
               </a>
-
-              <p class="product-card-text">Гостиница</p>
-              <b class="product-card-price">От 4000 ₽</b>
-              <a class="product-card-main-button" href="#">подробнее</a>
-              <a class="product-card-sub-button" href="#">в избранное</a>
-              <div class="product-card-stars">
-                <img class="product-card-star" src="images/icons/star.svg" alt="">
-                <img class="product-card-star" src="images/icons/star.svg" alt="">
-                <img class="product-card-star" src="images/icons/star.svg" alt="">
-                <img class="product-card-star" src="images/icons/star.svg" alt="">
+              <div class="product-card-flex">
+                <p class="product-card-text">Гостиница</p>
+                <b class="product-card-price">От 4000 ₽</b>
               </div>
-              <p class="product-card-raiting">Рейтинг: 8,5</p>
+              <div class="product-card-flex">
+                <a class="product-card-main-button" href="#">подробнее</a>
+                <a class="product-card-sub-button" href="#">в избранное</a>
+              </div>
+              <div class="product-card-flex">
+                <div class="product-card-stars">
+                  <img class="product-card-star" src="images/icons/star.svg" alt="">
+                  <img class="product-card-star" src="images/icons/star.svg" alt="">
+                  <img class="product-card-star" src="images/icons/star.svg" alt="">
+                  <img class="product-card-star" src="images/icons/star.svg" alt="">
+                </div>
+                <p class="product-card-raiting">Рейтинг: 8,5</p>
+            </div>
             </li>
 
             <li class="product-card">
@@ -174,17 +197,23 @@
                 <img class="product-card-image" src="images/villas-at-poco-diablo.jpg" width="300" height="211" alt="">
                 <h3 class="product-card-title">Villas at Poco Diablo</h3>
               </a>
-              <p class="product-card-text">Гостиница</p>
-              <b class="product-card-price">От 5000 ₽</b>
-              <a class="product-card-main-button" href="#">подробнее</a>
-              <a class="product-card-sub-button" href="#">в избранное</a>
-              <div class="product-card-stars">
-                <img class="product-card-star" src="images/icons/star.svg" alt="">
-                <img class="product-card-star" src="images/icons/star.svg" alt="">
-                <img class="product-card-star" src="images/icons/star.svg" alt="">
-                <img class="product-card-star" src="images/icons/star.svg" alt="">
+              <div class="product-card-flex">
+                <p class="product-card-text">Гостиница</p>
+                <b class="product-card-price">От 5000 ₽</b>
               </div>
-              <p class="product-card-raiting">Рейтинг: 9,2</p>
+              <div class="product-card-flex">
+                <a class="product-card-main-button" href="#">подробнее</a>
+                <a class="product-card-sub-button" href="#">в избранное</a>
+              </div>
+              <div class="product-card-flex">
+                <div class="product-card-stars">
+                  <img class="product-card-star" src="images/icons/star.svg" alt="">
+                  <img class="product-card-star" src="images/icons/star.svg" alt="">
+                  <img class="product-card-star" src="images/icons/star.svg" alt="">
+                  <img class="product-card-star" src="images/icons/star.svg" alt="">
+                </div>
+                <p class="product-card-raiting">Рейтинг: 9,2</p>
+              </div>
             </li>
 
             <li class="product-card">
@@ -192,16 +221,22 @@
                 <img class="product-card-image" src="images/desert-quail-inn.jpg" width="300" height="211" alt="">
                 <h3 class="product-card-title">Desert Quail Inn</h3>
               </a>
-              <p class="product-card-text">Гостиница</p>
-              <b class="product-card-price">От 2500 ₽</b>
-              <a class="product-card-main-button" href="#">подробнее</a>
-              <a class="product-card-sub-button" href="#">в избранное</a>
-              <div class="product-card-stars">
-                <img class="product-card-star" src="images/icons/star.svg" alt="">
-                <img class="product-card-star" src="images/icons/star.svg" alt="">
-                <img class="product-card-star" src="images/icons/star.svg" alt="">
+              <div class="product-card-flex">
+                <p class="product-card-text">Гостиница</p>
+                <b class="product-card-price">От 2500 ₽</b>
               </div>
-              <p class="product-card-raiting">Рейтинг: 6,9</p>
+              <div class="product-card-flex">
+                <a class="product-card-main-button" href="#">подробнее</a>
+                <a class="product-card-sub-button" href="#">в избранное</a>
+              </div>
+              <div class="product-card-flex">
+                <div class="product-card-stars">
+                  <img class="product-card-star" src="images/icons/star.svg" alt="">
+                  <img class="product-card-star" src="images/icons/star.svg" alt="">
+                  <img class="product-card-star" src="images/icons/star.svg" alt="">
+                </div>
+                <p class="product-card-raiting">Рейтинг: 6,9</p>
+              </div>
             </li>
 
             <li class="product-card">
@@ -209,15 +244,21 @@
                 <img class="product-card-image" src="images/greentree-inn.jpg" width="300" height="211" alt="">
                 <h3 class="product-card-title">GreenTree Inn</h3>
               </a>
-              <p class="product-card-text">Гостиница</p>
-              <b class="product-card-price">От 1500 ₽</b>
-              <a class="product-card-main-button" href="#">подробнее</a>
-              <a class="product-card-sub-button" href="#">в избранное</a>
-              <div class="product-card-stars">
-                <img class="product-card-star" src="images/icons/star.svg" alt="">
-                <img class="product-card-star" src="images/icons/star.svg" alt="">
+              <div class="product-card-flex">
+                <p class="product-card-text">Гостиница</p>
+                <b class="product-card-price">От 1500 ₽</b>
               </div>
-              <p class="product-card-raiting">Рейтинг: 5,0</p>
+              <div class="product-card-flex">
+                <a class="product-card-main-button" href="#">подробнее</a>
+                <a class="product-card-sub-button" href="#">в избранное</a>
+              </div>
+              <div class="product-card-flex">
+                <div class="product-card-stars">
+                  <img class="product-card-star" src="images/icons/star.svg" alt="">
+                  <img class="product-card-star" src="images/icons/star.svg" alt="">
+                </div>
+                <p class="product-card-raiting">Рейтинг: 5,0</p>
+              </div>
             </li>
           </ul>
 
@@ -245,7 +286,7 @@
 
           <div class="quantity">
             <p>Гостиниц на странице:</p>
-            <select class="select-control" aria-label="Количество гостиниц">
+            <select class="quantity-select-control" aria-label="Количество гостиниц">
               <option value="4">4</option>
               <option value="8">8</option>
               <option value="16">16</option>
@@ -257,7 +298,7 @@
             <h2 class="subscription-title-catalog">Подпишитесь на рассылку</h2>
             <p class="subscription-text-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="subscription-field" type="email" name="subscription-email" placeholder="Ваш e-mail" required>
+              <input class="subscription-field-catalog" type="email" name="subscription-email" placeholder="Ваш e-mail" required>
               <button class="subscription-button" type="submit">Подписаться</button>
             </form>
         </section>
