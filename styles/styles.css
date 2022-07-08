@@ -546,11 +546,12 @@ width: 448px;
 }
 
 .products-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  width: 1056px;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 18px;
+  margin: 0 auto;
   list-style-type: none;
-  margin: 0 72px 0 72px;
   padding: 0px;
 }
 
@@ -583,8 +584,7 @@ width: 448px;
 }
 
 .product-card-image,
-.product-card-title,
-.product-card-text {
+.product-card-title {
   margin: 0 0 16px 0;
 }
 
