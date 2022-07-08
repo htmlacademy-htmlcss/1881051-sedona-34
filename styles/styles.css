@@ -44,10 +44,6 @@ body {
   overflow: hidden;
 }
 
-.header-index {
-
-}
-
 .main-container {
   flex-grow: 1;
 }
@@ -59,6 +55,7 @@ body {
 
 .navigation {
   width: 1055px;
+  height: 65px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -83,18 +80,21 @@ body {
 
 .navigation-user {
   justify-content: flex-end;
-  max-width: 250px;
+  max-width: px;
   margin-left: auto;
 }
 
 .navigation-user .navigation-link {
   min-width: 18px;
   min-height: 18px;
+  width: 42px;
+  margin: 0;
 }
 
 .navigation-link {
   display: block;
-  padding: 20px 17px;
+  margin: auto;
+  margin-right: 34px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -344,11 +344,13 @@ body {
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
+  padding: 0;
 }
 
 .social-item {
   min-width: 20px;
   min-height: 20px;
+  margin-right: 26px;
 }
 
 .footer-phone {
@@ -389,6 +391,11 @@ body {
   display: flex;
   list-style-type: none;
   margin: 0 0 40px 70px;
+  padding: 0;
+}
+
+.breadcrumbs-item {
+margin-right: 10px;
 }
 
 .breadcrumbs-link {
