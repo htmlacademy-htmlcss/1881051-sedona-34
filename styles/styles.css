@@ -387,8 +387,8 @@ body {
   line-height: 78px;
   font-weight: 700;
   color: #ffffff;
-  margin: 0;
-  padding: 30px 0 0 70px;
+  margin: 0 70px 0 70px;
+  padding-top: 30px;
 }
 
 .catalog-container {
@@ -398,12 +398,26 @@ body {
 .breadcrumbs {
   display: flex;
   list-style-type: none;
-  margin: 0 0 40px 70px;
+  margin: 0 70px 40px 70px;
   padding: 0;
 }
 
 .breadcrumbs-item {
 margin-right: 10px;
+display: flex;
+align-items: center;
+}
+
+.breadcrumbs-item::after {
+  background-image: url("../images/icons/arrow.svg");
+  width: 5.5px;
+  height: 9px;
+  content: "";
+  margin-left: 10px;
+}
+
+.breadcrumbs-item:last-child:after {
+  background-image: none;
 }
 
 .breadcrumbs-link {
