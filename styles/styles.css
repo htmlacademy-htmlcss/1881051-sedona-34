@@ -244,6 +244,7 @@ body {
 
 .booking-title {
   margin: 0px auto 30px;
+  width: 592px;
 }
 
 .booking-text {
@@ -431,8 +432,9 @@ align-items: center;
 .filter {
   display: flex;
   justify-content: space-between;
-  margin: 0 70px 70px;
-  padding: 0 0 70px 62px;
+  margin: 0 auto 70px;
+  padding: 0 0 70px 0;
+  width: 1060px;
 
 }
 
@@ -442,13 +444,26 @@ align-items: center;
   padding: 0;
 }
 
+.filter-group-left,
+.filter-group-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-group-left {
+  width: 366px;
+}
+
+.filter-group-right {
+  width: 518px;
+}
+
 .filter-group {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
   border: none;
-
 }
 
 .filter-title {

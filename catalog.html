@@ -75,61 +75,64 @@
           <section class="filter-main">
             <h2 class="visually-hidden">Фильтры</h2>
             <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="filter-group">
-                <legend class="filter-title">Инфраструктура:</legend>
 
-                <ul class="filter-list">
-                  <li class="filter-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="pool" checked>
-                      <span class="control-mark-checkbox"></span>
-                      <span class="control-label">Бассейн</span>
-                    </label>
-                  </li>
-                  <li class="filter-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="parking" checked>
-                      <span class="control-mark-checkbox"></span>
-                      <span class="control-label">Парковка</span>
-                    </label>
-                  </li>
-                  <li class="filter-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="wi-fi">
-                      <span class="control-mark-checkbox"></span>
-                      <span class="control-label">Wi-Fi</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="filter-group">
-                <legend class="filter-title">Тип жилья:</legend>
-                <ul class="filter-list">
-                  <li class="filter-item">
-                    <label class="control">
-                      <input class="control-input" type="radio" name="product-group" value="shaving-supplies" checked>
-                      <span class="control-mark-radio"></span>
-                      <span class="control-label">Гостиница</span>
-                    </label>
-                  </li>
-                  <li class="filter-item">
-                    <label class="control">
-                      <input class="control-input" type="radio" name="product-group" value="care-products">
-                      <span class="control-mark-radio"></span>
-                      <span class="control-label">Мотель</span>
-                    </label>
-                  </li>
-                  <li class="filter-item">
-                    <label class="control">
-                      <input class="control-input" type="radio" name="product-group" value="accessories">
-                      <span class="control-mark-radio"></span>
-                      <span class="control-label">Апартаменты</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+              <div class="filter-group-left">
+                <fieldset class="filter-group">
+                  <legend class="filter-title">Инфраструктура:</legend>
 
-              <div class="filter-group">
+                  <ul class="filter-list">
+                    <li class="filter-item">
+                      <label class="control">
+                        <input class="control-input" type="checkbox" name="pool" checked>
+                        <span class="control-mark-checkbox"></span>
+                        <span class="control-label">Бассейн</span>
+                      </label>
+                    </li>
+                    <li class="filter-item">
+                      <label class="control">
+                        <input class="control-input" type="checkbox" name="parking" checked>
+                        <span class="control-mark-checkbox"></span>
+                        <span class="control-label">Парковка</span>
+                      </label>
+                    </li>
+                    <li class="filter-item">
+                      <label class="control">
+                        <input class="control-input" type="checkbox" name="wi-fi">
+                        <span class="control-mark-checkbox"></span>
+                        <span class="control-label">Wi-Fi</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="filter-group">
+                  <legend class="filter-title">Тип жилья:</legend>
+                  <ul class="filter-list">
+                    <li class="filter-item">
+                      <label class="control">
+                        <input class="control-input" type="radio" name="product-group" value="shaving-supplies" checked>
+                        <span class="control-mark-radio"></span>
+                        <span class="control-label">Гостиница</span>
+                      </label>
+                    </li>
+                    <li class="filter-item">
+                      <label class="control">
+                        <input class="control-input" type="radio" name="product-group" value="care-products">
+                        <span class="control-mark-radio"></span>
+                        <span class="control-label">Мотель</span>
+                      </label>
+                    </li>
+                    <li class="filter-item">
+                      <label class="control">
+                        <input class="control-input" type="radio" name="product-group" value="accessories">
+                        <span class="control-mark-radio"></span>
+                        <span class="control-label">Апартаменты</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+
+              <div class="filter-group-right">
                 <fieldset class="filter-group">
                   <legend class="filter-title">Стоимость, ₽:</legend>
                   <div class="range">
@@ -149,12 +152,11 @@
                     </div>
                   </div>
                 </fieldset>
-              </div>
-
-              <div class="filter-group">
+                <div class="filter-group">
                 <button class="filter-main-button" type="submit">Применить</button>
                 <button class="filter-sub-button" type="reset">Сбросить</button>
-              </div>
+                </div>
+            </div>
             </form>
           </section>
         </div>
