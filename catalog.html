@@ -130,21 +130,25 @@
               </fieldset>
 
               <div class="filter-group">
-                <label for="priсe" class="filter-title">Стоимость, ₽:</label>
-                <input class="range-input" type="number" min="0" max="9000" id="priсe" name="min-priсe" value="0" placeholder="от">
-                <input class="range-input" type="number" min="0" max="9000" id="priсe" name="max-priсe" value="9000" placeholder="до">
-                <div class="range">
-                  <div class="range-scale">
-                    <div class="range-bar" style="left: 42px; width: 136px">
-                      <button class="range-toggle toggle-min">
-                        <span class="visually-hidden">Изменить минимальную цену.</span>
-                      </button>
-                      <button class="range-toggle toggle-max">
-                        <span class="visually-hidden">Изменить максимальную цену.</span>
-                      </button>
+                <fieldset class="filter-group">
+                  <legend class="filter-title">Стоимость, ₽:</legend>
+                  <div class="range">
+                    <div class="range-inputs-wrapper">
+                      <input class="range-input range-input-left" type="number" min="0" max="9000" id="priсe" name="min-priсe" value="0">
+                      <input class="range-input range-input-right" type="number" min="0" max="9000" id="priсe" name="max-priсe" value="9000">
+                    </div>
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0px; width: 228px">
+                        <button class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </fieldset>
               </div>
 
               <div class="filter-group">
