@@ -104,6 +104,7 @@ body {
 }
 
 .button {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -251,6 +252,7 @@ body {
 }
 
 .booking-button {
+  font-family: inherit;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -293,6 +295,10 @@ body {
   margin: 30px auto 46px;
 }
 
+.subscription-form {
+  display: flex;
+}
+
 .subscription-field {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -319,6 +325,7 @@ body {
 }
 
 .subscription-button {
+  font-family: inherit;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -327,6 +334,7 @@ body {
   border: none;
   text-transform: uppercase;
   padding: 12px 34px;
+  margin: 0;
   border-radius: 0px 4px 4px 0px;
 }
 
@@ -505,6 +513,7 @@ margin-right: 10px;
 }
 
 .filter-main-button {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -519,6 +528,7 @@ margin-right: 10px;
 }
 
 .filter-sub-button {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -597,6 +607,7 @@ width: 143px;
 }
 
 .product-card-main-button {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -610,6 +621,7 @@ width: 143px;
 }
 
 .product-card-sub-button {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
