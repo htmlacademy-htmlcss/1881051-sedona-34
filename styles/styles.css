@@ -398,7 +398,7 @@ body {
   font-weight: 700;
   color: #ffffff;
   margin: 0 70px 0 70px;
-  padding-top: 30px;
+  padding-top: 33px;
 }
 
 .catalog-container {
@@ -408,7 +408,7 @@ body {
 .breadcrumbs {
   display: flex;
   list-style-type: none;
-  margin: 0 70px 40px 70px;
+  margin: 10px 70px 40px 70px;
   padding: 0;
 }
 
@@ -441,10 +441,9 @@ align-items: center;
 .filter {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto 70px;
-  padding: 0 0 70px 0;
+  margin: 0 auto 37px;
+  padding: 0 0 45px 0;
   width: 1060px;
-
 }
 
 .filter-list {
@@ -513,14 +512,13 @@ align-items: center;
 }
 
 .control-label {
-  margin-left: 20px;
+  margin-left: 16px;
 }
 
 .range-inputs-wrapper {
   display: flex;
   justify-content: center;
-  margin: 0;
-  margin-bottom: 32px;
+  margin: 8px 0 28px 0;
 }
 
 .range-input {
@@ -638,12 +636,17 @@ align-items: center;
   display: flex;
   justify-content: space-between;
   width: 1057px;
-  margin: 0 auto 57px auto;
+  margin: 0 auto 36px auto;
   align-items: center;
 }
 
 .products-title {
 width: 448px;
+font-size: 30px;
+line-height: 36px;
+font-weight: 700;
+color: #000000;
+text-transform: uppercase;
 }
 
 .quantity-select-control,
@@ -690,15 +693,15 @@ width: 448px;
   width: 1056px;
   display: grid;
   grid-template-columns: 340px 340px 340px;
-  gap: 18px;
-  margin: 0 auto 60px;
+  gap: 0 18px;
+  margin: 0 auto 66px;
   list-style-type: none;
   padding: 0px;
 }
 
 .product-card {
   width: 340px;
-  padding: 20px;
+  padding: 19px 20px;
   box-sizing:border-box;
 }
 
@@ -706,35 +709,33 @@ width: 448px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.products-title {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
+  margin-top: 16px;
 }
 
 .product-card-link {
+  text-decoration: none;
+}
+
+.product-card-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   color: #000000;
-  text-decoration: none;
-}
-
-.product-card-image,
-.product-card-title {
   margin: 0 0 16px 0;
 }
 
+.product-card-image {
+  margin: 0 0 13px 0;
+}
+
+.product-card-text,
 .product-card-price {
 font-size: 18px;
 line-height: 21px;
 font-weight: 400;
 color: #333333;
-width: 143px;
+width: 140px;
+margin: 0;
 }
 
 .product-card-main-button {
@@ -749,6 +750,7 @@ width: 143px;
   padding: 9px 26px;
   text-transform: uppercase;
   text-decoration: none;
+  margin: 0;
 }
 
 .product-card-sub-button {
@@ -763,23 +765,26 @@ width: 143px;
   padding: 9px 20px;
   text-transform: uppercase;
   text-decoration: none;
+  margin: 0;
 }
 
 .product-card-raiting {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  background-color: #F2F2F2;
   text-transform: uppercase;
-  padding: 9px 33px;
+  background-color: #F2F2F2;
   border-radius: 4px;
+  margin: 0;
+  padding: 9px 22px;
+  width: 95px;
 }
 
 .footer-main {
   display: flex;
   justify-content: space-between;
   width: 1057px;
-  margin: 0 auto 57px auto;
+  margin: 0 auto 119px auto;
   padding-top: 30px;
   align-items: center;
   border-top: 1px solid #e6e6e6;
@@ -794,7 +799,7 @@ width: 143px;
 }
 
 .pagination-item {
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .pagination-link {
@@ -806,8 +811,8 @@ width: 143px;
   text-decoration: none;
   display: block;
   box-sizing: border-box;
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
   border-radius: 4px;
   text-align: center;
   padding: 10px 0 0 0;
@@ -822,8 +827,8 @@ width: 143px;
   text-decoration: none;
   display: block;
   box-sizing: border-box;
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
   border-radius: 4px;
   text-align: center;
   padding: 10px 0 0 0;
@@ -848,24 +853,18 @@ width: 143px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 94px;
+  margin: 0 auto 87px;
 }
 
 .subscription-title-catalog {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
   color: #000000;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0px auto 30px;
 }
 
 .subscription-text-catalog {
-  font-size: 22px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #000000;
-  text-align: center;
-  margin: 30px auto 46px;
+  color: #333333;
+}
+
+.subscription-field-catalog {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #f2f2f2;
 }
