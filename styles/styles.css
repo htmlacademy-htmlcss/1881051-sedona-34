@@ -65,10 +65,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 0 0 0 169px;
+  margin: 0 0 0 180px;
   padding: 0;
   width: 390px;
   list-style-type: none;
+}
+
+.navigation-item {
+  position: relative;
 }
 
 .navigation-logo {
@@ -80,8 +84,7 @@ body {
 
 .navigation-user {
   justify-content: flex-end;
-  max-width: px;
-  margin-left: auto;
+
 }
 
 .navigation-user .navigation-link {
@@ -103,6 +106,22 @@ body {
   text-decoration: none;
 }
 
+.favorite-count {
+  position: absolute;
+  font-family: inherit;
+  font-size: 10px;
+  line-height: 13px;
+  color: #ffffff;
+  background-color: #7DB54F;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  padding: 4px;
+  border-radius: 50%;
+  top: -15px;
+  right: 9px;
+}
+
 .button {
   font-family: inherit;
   font-size: 16px;
@@ -113,13 +132,14 @@ body {
   border: none;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 9px 15px;
+  padding: 9px 34px;
   border-radius: 4px;
+  margin-left: 10px;
 }
 
 .main-container {
   flex-grow: 1;
-  padding-top: 600px;
+  padding-top: 485px;
 }
 
 .main-index {
@@ -170,7 +190,7 @@ body {
   width: 400px;
   height: 384px;
   text-align: center;
-  padding: 85px;
+  padding: 92px 85px;
   box-sizing: border-box;
 }
 
@@ -198,7 +218,8 @@ body {
 }
 
 .advantages-icon {
-  margin-bottom: 30px;
+  margin-top: -12px;
+  margin-bottom: 28px;
 }
 
 .advantages-item.blue {
@@ -248,7 +269,7 @@ body {
 }
 
 .booking-text {
-  margin: 30px auto 60px;
+  margin: 0 auto 60px;
   width: 592px;
 }
 
@@ -262,7 +283,7 @@ body {
   border: none;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 9px 149px;
+  padding: 12px 149px;
   border-radius: 4px;
 }
 
@@ -284,7 +305,7 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  margin: 0px auto 30px;
+  margin: 0px auto 29px;
 }
 
 .subscription-text {
@@ -293,7 +314,7 @@ body {
   font-weight: 400;
   color: #ffffff;
   text-align: center;
-  margin: 30px auto 46px;
+  margin: 0 auto 46px;
 }
 
 .subscription-form {
@@ -306,22 +327,9 @@ body {
   line-height: 21px;
   color: #9B9B9B;
   border: 0px;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 10px 0px 0px 10px;
   height: 60px;
-  width: 600px;
-  padding: 0px 0px 0px 22px;
-}
-
-.subscription-field-catalog {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  color: #9B9B9B;
-  background-color: #f2f2f2;
-  border: 0px;
-  border-radius: 4px 0px 0px 4px;
-  height: 60px;
-  width: 600px;
+  width: 578px;
   padding: 0px 0px 0px 22px;
 }
 
@@ -336,7 +344,7 @@ body {
   text-transform: uppercase;
   padding: 12px 34px;
   margin: 0;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .footer-container {
@@ -359,7 +367,8 @@ body {
 .social-item {
   min-width: 20px;
   min-height: 20px;
-  margin-right: 26px;
+  margin-right: 12px;
+  margin-left: 12px;
 }
 
 .footer-phone {
