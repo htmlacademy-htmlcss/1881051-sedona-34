@@ -180,15 +180,22 @@ body {
 
 .main-container {
   flex-grow: 1;
-  padding-top: 485px;
 }
 
 .main-index {
   color: #333333;
   background-color: #ffffff;
+}
+
+.banner {
+  background-color: #5A8AAE;
   background-image: url("../images/background-main.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  padding: 51px 0 82px 0;
+}
+
+.banner-image {
+  margin: 0 auto;
+  display: block;
 }
 
 .booking-title,
