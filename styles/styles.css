@@ -55,7 +55,7 @@ body {
 
 .navigation {
   width: 1055px;
-  height: 65px;
+  min-height: 65px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -67,12 +67,13 @@ body {
   align-items: center;
   margin: 0 0 0 180px;
   padding: 0;
-  width: 390px;
+  min-width: 253px;
   list-style-type: none;
 }
 
 .navigation-item {
   position: relative;
+  display: block;
 }
 
 .navigation-logo {
@@ -83,8 +84,7 @@ body {
 }
 
 .navigation-user {
-  justify-content: flex-end;
-
+  margin: 0;
 }
 
 .navigation-user .navigation-link {
@@ -141,11 +141,11 @@ body {
   line-height: 13px;
   color: #ffffff;
   background-color: #7DB54F;
-  width: 20px;
+  min-width: 20px;
   height: 20px;
   box-sizing: border-box;
   padding: 4px;
-  border-radius: 50%;
+  border-radius: 10px;
   top: 2px;
   right: 9px;
 }
@@ -163,6 +163,7 @@ body {
   padding: 9px 34px;
   border-radius: 4px;
   margin-left: 10px;
+  display: block;
 }
 
 .button:hover {
@@ -241,7 +242,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 400px;
-  height: 384px;
+  min-height: 384px;
   text-align: center;
   padding: 0 85px;
   box-sizing: border-box;
@@ -385,6 +386,8 @@ body {
 
 .subscription-form {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
 }
 
 .subscription-field {
@@ -456,6 +459,7 @@ body {
 .social-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   list-style-type: none;
   padding: 0;
@@ -482,6 +486,11 @@ body {
 
 .social-item:active .social-icon {
   fill: rgba(104, 162, 202, 0.3);
+}
+
+.footer-phone-list {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-phone {
@@ -582,6 +591,7 @@ align-items: center;
 .filter {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0 auto 37px;
   padding: 0 0 45px 0;
   width: 1060px;
@@ -597,6 +607,7 @@ align-items: center;
 .filter-group-right {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .filter-group-left {
@@ -889,6 +900,11 @@ color: #000000;
 text-transform: uppercase;
 }
 
+.select-sort {
+  display: flex;
+  flex-direction: column;
+}
+
 .select-control {
   height: 48px;
   width: 287px;
@@ -926,6 +942,7 @@ text-transform: uppercase;
 .select-view {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .view-button {
@@ -977,6 +994,7 @@ text-transform: uppercase;
 .product-card-flex {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 16px;
 }
@@ -1134,8 +1152,8 @@ text-transform: uppercase;
   text-decoration: none;
   display: block;
   box-sizing: border-box;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   border-radius: 4px;
   text-align: center;
   padding: 10px 0 0 0;
@@ -1163,8 +1181,8 @@ text-transform: uppercase;
   text-decoration: none;
   display: block;
   box-sizing: border-box;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   border-radius: 4px;
   text-align: center;
   padding: 10px 0 0 0;
@@ -1188,6 +1206,7 @@ text-transform: uppercase;
   flex-direction: column;
   align-items: center;
   margin: 0 auto 87px;
+  max-width: 800px;
 }
 
 .subscription-title-catalog {
