@@ -69,7 +69,7 @@
                 <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <div class="advantages-item-image">
-                <img class="advantages-image" src="images/street-800.jpg" width="800" height="384" alt="улица Седоны.">
+                <img class="advantages-image" src="images/street-800.jpg" width="800" height="387" alt="улица Седоны.">
               </div>
               <ul class="advantages-list">
                 <li class="advantages-item blue-12">
@@ -91,7 +91,7 @@
             </li>
             <li class="advantages-rows">
               <div class="advantages-item-image">
-                <img class="advantages-image" src="images/mountains-800.jpg" width="800" height="384" alt="Мост дьявола.">
+                <img class="advantages-image" src="images/mountains-800.jpg" width="800" height="387" alt="Мост дьявола.">
               </div>
               <div class="advantages-item blue">
                 <h3 class="advantages-title">Там есть мост&nbsp;дьявола</h3>
@@ -178,5 +178,52 @@
         </a>
       </div>
     </footer>
+
+    <div class="modal-container visually-hidden">
+      <div class="modal modal-search">
+
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="label" for="date_in">Дата Заезда:</label>
+            <div class="date">
+              <input class="date-input" name="date-in" id="date_in" type="text" value="27 апреля 2020" placeholder="Укажите дату" required>
+              <p class="comment error">Мы не можем отправить вас в прошлое.</p>
+            </div>
+            <label class="label" for="date-out">Дата Выезда:</label>
+            <div class="date">
+              <input class="date-input" name="date-out" id="date_out" type="text" value="1 сентября 2021" placeholder="Укажите дату" required>
+              <p class="comment">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+            <label class="label" for="adult">Взрослые:</label>
+            <div class="count">
+              <button class="count-button minus-button" type="button"><span class="visually-hidden">Минус.</span></button>
+              <input class="count-input" name="adult" id="adult" min="1" type="number" value="2" required>
+              <button class="count-button plus-button" type="button"><span class="pluss-button visually-hidden">Плюс.</span></button>
+            </div>
+            <div class="children-label">
+              <label class="label" for="children">Дети:</label>
+              <div class="tooltip">
+                <button class="info-button" type="button">
+                  <svg class="info-icon" aria-hidden="true" focusable="false" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#fff"><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"></path></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h1v9H0z"></path></clipPath></defs></svg>
+                </button>
+                <span class="tooltip-text">Укажите количество детей, которые будут с&nbsp;вами, возраст которых от&nbsp;6 до&nbsp;18 лет. Дети до&nbsp;6 лет размещаются бесплатно.</span>
+              </div>
+            </div>
+            <div class="count">
+              <button class="count-button minus-button" type="button"><span class="visually-hidden">Минус.</span></button>
+              <input class="count-input" name="children" id="children" min="0" type="number" value="1" required>
+              <button class="count-button plus-button" type="button"><span class="visually-hidden">Плюс.</span></button>
+            </div>
+            <button class="modal-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 </html>
